@@ -1,0 +1,376 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
+
+body {
+    max-width: 100vw !important;
+    font-family: Helvetica, sans-serif;
+    background: rgb(68, 68, 68);
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+#boutonToTheTop:hover {
+    background-color: rgb(78, 78, 78) !important;
+    color: white !important;
+    fill: white;
+}
+
+#boutonToTheTop {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 1;
+    width: 80px;
+    font-size: 50px;
+    border: none;
+    outline: none;
+    background-color: #bdbdbd;
+    fill: #000000;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navLink {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px #404040;
+}
+
+.navLink:hover {
+    color: #f6ff00;
+    transition: all 0.2s ease;
+    text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000, 0 0 20px #000000, 0 0 25px #000000;
+}
+
+#logoNavbar {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+
+.form-select {
+    height: 170px !important;
+    overflow: hidden !important;
+    color: white;
+    background-color: transparent;
+}
+
+.colorTitle {
+    margin-left: 120px;
+    margin-right: 150px;
+}
+
+.page {
+    width: 100vw;
+    height: 500vh;
+    margin: 10px;
+}
+
+.mainCarousel {
+    width: 500px !important;
+}
+
+.cardIndexCarousel {
+    margin: auto;
+    max-width: 20rem !important;
+    background : rgba(9, 9, 9) !important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    height: 550px;
+    width: 380px;
+}
+
+.cardIndex {
+    max-width: 20rem !important;
+    background : rgba(9, 9, 9, 0.76) !important;
+    box-sizing: border-box;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    height: 450px;
+    width: 400px;
+}
+
+.card-header {
+    min-height: 3rem;
+    border-bottom: none !important;
+}
+
+.cardBody {
+    font-size: 1em;
+}
+
+.cardTitle {
+    font-size: 1em;
+    min-height: 2rem !important;
+}
+
+.beerPicture {
+    width: 180px !important;
+    height: 200px !important;
+}
+
+.beerPictureCarousel {
+    width: 300px !important;
+    height: 300px !important;
+}
+
+#imgInfo {
+    width: 200px !important;
+}
+
+.inventory_status::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4EBA59;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.inventory_status {
+    color: #4EBA59;
+}
+
+.incrementcontainer {
+    position: relative;
+    left: 30px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.incrementcontainer button {
+    z-index: 10;
+    font-size: 18px;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 99px;
+    background-color: #EBEBF2;
+    color:#474A5C;
+    border: 2px solid #fff;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.incrementcontainer button.dec{
+    position: relative;
+}
+
+.incrementcontainer button.inc {
+    position: relative;
+    left: -50px;
+}
+
+.number {
+    position: relative;
+    max-width: 90px;
+    height: 2.4rem;
+    left: -24px;
+    font-size: 1.2rem;
+    color: #474A5C;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+}
+
+.incrementcontainer button:hover {
+    background: #DADBE3;
+}
+
+.incrementcontainer button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* Form login */
+.login-box {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+
+/* footer style */
+footer {
+    background: rgba(0, 0, 0, 0.2);
+    color: #5f5f5f;
+}
+
+footer .social {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer .fa {
+    scale: 2.5;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+footer .fa:hover {
+    color: white;
+    cursor: pointer;
+}
+
+footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #616161;
+    margin-bottom: 0;
+}
+
+
+/* Page 404 style */
+.page-404 {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: solid 15px white;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 70px 5px rgba(255,255,255,0.7);
+}
+
+.page-404 p {
+    font-size: 30px;
+    margin: 0;
+}
+
+.page-404 span {
+    font-size: 32px;
+}
+
+@media screen and (max-width: 1500px) {
+    .page-404 {
+    padding-bottom: 30px;
+    }
+    
+    .page-404 p {
+    font-size: 30px;
+    }
+    
+    .page-404 span {
+    font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .page-404 {
+    padding-bottom: 15px;
+    }
+    
+    .page-404 p {
+    font-size: 100px;
+    }
+    
+    .page-404 span {
+    font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+    margin: 0;
+    }
+    
+    .page-404 {
+    border: none;
+    box-shadow: none;
+    }
+}
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.page-404 {
+    animation: zoom 5s infinite ;
+}
+
+#errorMessage {
+    height: 73vh;
+}
+
+
+
+
+
